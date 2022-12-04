@@ -1064,6 +1064,11 @@ public class Main2 {
 (writeln (flat (list 1 2 (list 3 (list 4 5)) 6 7)))
 (writeln (flat (list 1 (list 2 3 (list 4 5) 6 (list 7 8) ) )))
 
+;(define (flat lst)
+ ; (match lst
+  ;  ['() '()]
+   ; [(list-rest l t) (append (if (list? l) (flat l) (list l)) (flat t))]))
+
 ;6
 (define (mmap f l)
   (define (ff a b)
